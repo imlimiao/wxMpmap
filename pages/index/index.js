@@ -1,6 +1,6 @@
 // page/index/index.js
 import QQMapWX from '../../plugins/qqmap-wx-jssdk';
-const qqmapsdk = new QQMapWX({ key: 'KVFBZ-M76HJ-QXWF7-K4E4Y-JRWMS-RQBUN'});
+const qqmapsdk = new QQMapWX({ key: '申请key'});
 Page({
 
   /**
@@ -34,9 +34,8 @@ Page({
              
           //   }
           //   });
-
           qqmapsdk.geocoder({
-            address: '北京市朝阳区电子产业园105号楼',
+            address: '北京市朝阳区兆维大厦A座',
             success: function (res) {
               console.log(res,"------");
               wx.openLocation({
@@ -54,7 +53,6 @@ Page({
             }
           })
         })
-
 
       }
     }) 
